@@ -1,201 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Johnny-J Constructions provides professional building construction, architectural drawings, structural drawings, surveying and project supervision in Ghana.">
-  <title>Johnny-J Constructions | You Dream, We Build</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<title>Johnny-J Constructions | You Dream, We Build</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #252525;
-      line-height: 1.6;
-    }
+<meta name="description" content="Johnny-J Constructions offers building construction, architectural design, structural drawings, surveying, renovation and site supervision in Ghana.">
 
-    header {
-      background: #20272b;
-      color: white;
-      padding: 20px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+<style>
+:root {
+  --dark: #17191c;
+  --red: #c62828;
+  --white: #ffffff;
+  --light: #f4f4f4;
+  --grey: #777777;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .logo span {
-      color: #e5b34f;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark);
+  line-height: 1.7;
+}
 
-    .hero {
-      min-height: 540px;
-      background:
-        linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.15)),
-        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800")
-        center/cover;
-      display: flex;
-      align-items: center;
-      padding: 60px 8%;
-      color: white;
-    }
+header {
+  background: var(--dark);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    .hero-content {
-      max-width: 650px;
-    }
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
 
-    .hero h1 {
-      font-size: clamp(38px, 6vw, 65px);
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
+.logo span {
+  color: #ed3434;
+}
 
-    .hero h1 span {
-      color: #e5b34f;
-    }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #e5b34f;
-      color: #20272b;
-      padding: 14px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-    }
+nav a:hover {
+  color: #ed3434;
+}
 
-    section {
-      padding: 75px 8%;
-    }
+.hero {
+  min-height: 570px;
+  background:
+    linear-gradient(90deg,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.25)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800")
+    center/cover;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  color: white;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.hero-content {
+  max-width: 680px;
+}
 
-    .section-title h2 {
-      font-size: 32px;
-      color: #20272b;
-    }
+.hero .tag {
+  color: #ff5555;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
 
-    .section-title p {
-      color: #777;
-    }
+.hero h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
 
-    .about {
-      background: #f5f5f5;
-      text-align: center;
-    }
+.hero h1 span {
+  color: #ed3434;
+}
 
-    .about p {
-      max-width: 800px;
-      margin: auto;
-    }
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
-    .services-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
-    }
+.btn {
+  display: inline-block;
+  padding: 14px 27px;
+  background: var(--red);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
 
-    .service {
-      padding: 28px;
-      background: #f5f5f5;
-      border-bottom: 4px solid #e5b34f;
-      border-radius: 5px;
-    }
+.btn:hover {
+  background: #991b1b;
+}
 
-    .service h3 {
-      margin-bottom: 12px;
-      color: #20272b;
-    }
+section {
+  padding: 80px 8%;
+}
 
-    .projects {
-      background: #f5f5f5;
-    }
+.section-title {
+  text-align: center;
+  margin-bottom: 42px;
+}
 
-    .project-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.section-title h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
 
-    .project img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
+.section-title p {
+  color: var(--grey);
+}
 
-    .project h3 {
-      margin-top: 10px;
-    }
+.about {
+  text-align: center;
+}
 
-    .contact {
-      background: #20272b;
-      color: white;
-      text-align: center;
-    }
+.about-content {
+  max-width: 850px;
+  margin: auto;
+}
 
-    .contact h2 {
-      color: #e5b34f;
-      margin-bottom: 15px;
-    }
+.about-content p {
+  color: #555;
+}
 
-    .contact p {
-      margin-bottom: 25px;
-    }
+.services {
+  background: var(--light);
+}
 
-    footer {
-      background: #151a1d;
-      color: white;
-      text-align: center;
-      padding: 22px;
-      font-size: 14px;
-    }
+.service-grid {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
 
-    @media(max-width: 650px) {
-      header {
-        gap: 15px;
-      }
+.service-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 5px;
+  border-bottom: 4px solid var(--red);
+  transition: transform .2s;
+}
 
-      nav {
-        width: 100%;
-      }
+.service-card:hover {
+  transform: translateY(-5px);
+}
 
-      nav a {
-        margin: 0 12px 0 0;
-      }
+.service-card h3 {
+  margin-bottom: 12px;
+  font-size: 19px;
+}
 
-      .hero {
-        min-height: 450px;
-      }
-    }
-  </style>
+.service-card p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.projects {
+  background: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin-top: 12px;
+}
+
+.project-card p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.why-us {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.why-us p {
+  max-width: 750px;
+  margin: auto;
+  color: #dddddd;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: var(--grey);
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #101113;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+  font-size: 14px;
+}
+
+footer span {
+  color: #ed3434;
+}
+
+@media(max-width: 650px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 50px 6%;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -214,74 +303,79 @@
 
 <div class="hero" id="home">
   <div class="hero-content">
+    <div class="tag">BUILDING YOUR FUTURE</div>
+
     <h1>YOU DREAM.<br><span>WE BUILD.</span></h1>
 
     <p>
-      Building your vision with quality, creativity
-      and professional construction services.
+      We turn your building ideas into reality
+      through quality construction, innovative
+      designs and professional project supervision.
     </p>
 
-    <a href="#contact" class="btn">CONTACT US</a>
+    <a href="#contact" class="btn">LET'S BUILD TOGETHER</a>
   </div>
 </div>
 
 <section class="about" id="about">
   <div class="section-title">
-    <h2>About Johnny-J Constructions</h2>
-    <p>Building trust through quality and excellence.</p>
+    <h2>About Our Company</h2>
+    <p>Your trusted partner in construction and design.</p>
   </div>
 
-  <p>
-    Johnny-J Constructions is a construction and building
-    design company committed to delivering quality
-    construction solutions. We provide building construction,
-    architectural and structural drawings, surveying,
-    renovation, 3D modelling and professional site supervision.
-    Our mission is to turn our clients' dreams into reality.
-  </p>
+  <div class="about-content">
+    <p>
+      Johnny-J Constructions is a construction and
+      building design company committed to providing
+      quality construction solutions. We combine
+      technical knowledge, creativity and professional
+      project management to deliver building projects
+      that meet our clients' expectations.
+    </p>
+  </div>
 </section>
 
-<section id="services">
+<section class="services" id="services">
   <div class="section-title">
     <h2>Our Services</h2>
-    <p>Professional solutions for your building projects.</p>
+    <p>Comprehensive building and construction solutions.</p>
   </div>
 
-  <div class="services-grid">
+  <div class="service-grid">
 
-    <div class="service">
+    <div class="service-card">
       <h3>General Construction</h3>
-      <p>Quality building construction and project delivery.</p>
+      <p>Residential and commercial building construction.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>Surveying</h3>
-      <p>Building site measurements and surveying services.</p>
+      <p>Site measurements and surveying services.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>Renovation</h3>
-      <p>Improving, upgrading and transforming existing buildings.</p>
+      <p>Building improvement and renovation solutions.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>Architectural Drawings</h3>
-      <p>Building plans and architectural design solutions.</p>
+      <p>Functional and attractive building designs.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>Structural Drawings</h3>
-      <p>Structural design documentation and detailing.</p>
+      <p>Structural design and engineering documentation.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>3D Modelling</h3>
-      <p>Realistic visual representations of building designs.</p>
+      <p>Architectural visualisation and 3D building models.</p>
     </div>
 
-    <div class="service">
+    <div class="service-card">
       <h3>Site Supervision</h3>
-      <p>Professional monitoring of construction activities.</p>
+      <p>Construction monitoring and project supervision.</p>
     </div>
 
   </div>
@@ -290,50 +384,58 @@
 <section class="projects" id="projects">
   <div class="section-title">
     <h2>Our Projects</h2>
-    <p>Explore our construction and design portfolio.</p>
+    <p>A showcase of our construction and design work.</p>
   </div>
 
   <div class="project-grid">
 
-    <div class="project">
+    <div class="project-card">
       <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
-      alt="Modern residential building">
-      <h3>Residential Buildings</h3>
-      <p>Quality residential construction.</p>
+      alt="Contemporary residential building">
+      <h3>Residential Construction</h3>
+      <p>Modern residential building projects.</p>
     </div>
 
-    <div class="project">
+    <div class="project-card">
       <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
-      alt="Modern house interior">
-      <h3>Building Design</h3>
-      <p>Modern architectural design solutions.</p>
+      alt="Modern architectural interior">
+      <h3>Architectural Design</h3>
+      <p>Creative building design and visualisation.</p>
     </div>
 
-    <div class="project">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
-      alt="Contemporary house">
-      <h3>Construction Projects</h3>
-      <p>Bringing building concepts to life.</p>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56c2a?w=800"
+      alt="Modern house exterior">
+      <h3>Building Development</h3>
+      <p>Construction and project delivery.</p>
     </div>
 
   </div>
 </section>
 
+<section class="why-us">
+  <h2>Why Choose Johnny-J Constructions?</h2>
+  <p>
+    We are committed to quality workmanship,
+    professional service, attention to detail
+    and delivering projects with our clients' needs
+    at the centre of every decision.
+  </p>
+</section>
+
 <section class="contact" id="contact">
   <h2>Let's Build Your Dream Project</h2>
-
   <p>
-    Contact Johnny-J Constructions today to discuss
-    your next building project.
+    Have a building project in mind?
+    Get in touch with Johnny-J Constructions.
   </p>
-
   <a href="mailto:YOUR-EMAIL@example.com" class="btn">
-    SEND US AN EMAIL
+    CONTACT OUR TEAM
   </a>
 </section>
 
 <footer>
-  <p>© 2026 Johnny-J Constructions. All Rights Reserved.</p>
+  <p>© 2026 <span>Johnny-J Constructions</span>. All Rights Reserved.</p>
   <p>You Dream, We Build.</p>
 </footer>
 
