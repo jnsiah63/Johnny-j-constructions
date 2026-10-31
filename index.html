@@ -6,7 +6,7 @@
 
 <title>Johnny-J Constructions | You Dream, We Build</title>
 
-<meta name="description" content="Johnny-J Constructions offers building construction, architectural design, structural drawings, surveying, renovation and site supervision in Ghana.">
+<meta name="description" content="Johnny-J Constructions in Ghana provides general construction, surveying, renovation, architectural drawings, structural drawings, 3D modelling and site supervision.">
 
 <style>
 :root {
@@ -15,6 +15,7 @@
   --white: #ffffff;
   --light: #f4f4f4;
   --grey: #777777;
+  --green: #25D366;
 }
 
 * {
@@ -118,6 +119,7 @@ nav a:hover {
   text-decoration: none;
   font-weight: bold;
   border-radius: 3px;
+  transition: background .2s;
 }
 
 .btn:hover {
@@ -234,6 +236,7 @@ section {
 
 .contact {
   text-align: center;
+  background: var(--light);
 }
 
 .contact h2 {
@@ -246,6 +249,33 @@ section {
   margin-bottom: 25px;
 }
 
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-buttons .btn {
+  margin: 5px;
+}
+
+.whatsapp-btn {
+  background: var(--green);
+}
+
+.whatsapp-btn:hover {
+  background: #159b49;
+}
+
+.telephone-btn {
+  background: var(--dark);
+}
+
+.telephone-btn:hover {
+  background: #444;
+}
+
 footer {
   background: #101113;
   color: white;
@@ -256,6 +286,26 @@ footer {
 
 footer span {
   color: #ed3434;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: var(--green);
+  color: white;
+  padding: 14px 19px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  transition: transform .2s;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.05);
 }
 
 @media(max-width: 650px) {
@@ -283,14 +333,34 @@ footer span {
   .section-title h2 {
     font-size: 28px;
   }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .floating-whatsapp {
+    bottom: 15px;
+    right: 12px;
+    padding: 12px 16px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <div class="logo">JOHNNY-J <span>CONSTRUCTIONS</span></div>
+  <div class="logo">
+    JOHNNY-J <span>CONSTRUCTIONS</span>
+  </div>
 
   <nav>
     <a href="#home">Home</a>
@@ -301,11 +371,17 @@ footer span {
   </nav>
 </header>
 
+<!-- HOMEPAGE BANNER -->
+
 <div class="hero" id="home">
   <div class="hero-content">
+
     <div class="tag">BUILDING YOUR FUTURE</div>
 
-    <h1>YOU DREAM.<br><span>WE BUILD.</span></h1>
+    <h1>
+      YOU DREAM.<br>
+      <span>WE BUILD.</span>
+    </h1>
 
     <p>
       We turn your building ideas into reality
@@ -313,17 +389,24 @@ footer span {
       designs and professional project supervision.
     </p>
 
-    <a href="#contact" class="btn">LET'S BUILD TOGETHER</a>
+    <a href="#contact" class="btn">
+      LET'S BUILD TOGETHER
+    </a>
+
   </div>
 </div>
 
+<!-- ABOUT US -->
+
 <section class="about" id="about">
+
   <div class="section-title">
     <h2>About Our Company</h2>
     <p>Your trusted partner in construction and design.</p>
   </div>
 
   <div class="about-content">
+
     <p>
       Johnny-J Constructions is a construction and
       building design company committed to providing
@@ -331,11 +414,20 @@ footer span {
       technical knowledge, creativity and professional
       project management to deliver building projects
       that meet our clients' expectations.
+
+      Our mission is to transform our clients' dreams
+      into reality through quality workmanship,
+      innovation and dedication.
     </p>
+
   </div>
+
 </section>
 
+<!-- OUR SERVICES -->
+
 <section class="services" id="services">
+
   <div class="section-title">
     <h2>Our Services</h2>
     <p>Comprehensive building and construction solutions.</p>
@@ -345,99 +437,194 @@ footer span {
 
     <div class="service-card">
       <h3>General Construction</h3>
-      <p>Residential and commercial building construction.</p>
+      <p>
+        Residential and commercial building
+        construction services.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>Surveying</h3>
-      <p>Site measurements and surveying services.</p>
+      <p>
+        Site measurements and surveying services
+        for building projects.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>Renovation</h3>
-      <p>Building improvement and renovation solutions.</p>
+      <p>
+        Building improvement, rehabilitation
+        and renovation solutions.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>Architectural Drawings</h3>
-      <p>Functional and attractive building designs.</p>
+      <p>
+        Functional and attractive building
+        plans and architectural designs.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>Structural Drawings</h3>
-      <p>Structural design and engineering documentation.</p>
+      <p>
+        Structural design documentation
+        and engineering detailing.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>3D Modelling</h3>
-      <p>Architectural visualisation and 3D building models.</p>
+      <p>
+        Architectural visualisation and
+        realistic 3D building models.
+      </p>
     </div>
 
     <div class="service-card">
       <h3>Site Supervision</h3>
-      <p>Construction monitoring and project supervision.</p>
+      <p>
+        Construction monitoring, quality
+        control and project supervision.
+      </p>
     </div>
 
   </div>
+
 </section>
 
+<!-- PROJECT PORTFOLIO -->
+
 <section class="projects" id="projects">
+
   <div class="section-title">
     <h2>Our Projects</h2>
-    <p>A showcase of our construction and design work.</p>
+    <p>
+      A showcase of our construction and design work.
+    </p>
   </div>
 
   <div class="project-grid">
 
     <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
-      alt="Contemporary residential building">
+      <img
+        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
+        alt="Contemporary residential building">
+
       <h3>Residential Construction</h3>
       <p>Modern residential building projects.</p>
     </div>
 
     <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
-      alt="Modern architectural interior">
+      <img
+        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+        alt="Modern architectural interior">
+
       <h3>Architectural Design</h3>
       <p>Creative building design and visualisation.</p>
     </div>
 
     <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56c2a?w=800"
-      alt="Modern house exterior">
+      <img
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56c2a?w=800"
+        alt="Modern house exterior">
+
       <h3>Building Development</h3>
       <p>Construction and project delivery.</p>
     </div>
 
   </div>
+
 </section>
 
+<!-- WHY CHOOSE US -->
+
 <section class="why-us">
+
   <h2>Why Choose Johnny-J Constructions?</h2>
+
   <p>
     We are committed to quality workmanship,
     professional service, attention to detail
-    and delivering projects with our clients' needs
-    at the centre of every decision.
+    and delivering projects with our clients'
+    needs at the centre of every decision.
+    We believe every successful project begins
+    with trust, planning and quality execution.
   </p>
+
 </section>
+
+<!-- CONTACT US -->
 
 <section class="contact" id="contact">
+
   <h2>Let's Build Your Dream Project</h2>
+
   <p>
     Have a building project in mind?
-    Get in touch with Johnny-J Constructions.
+    Contact Johnny-J Constructions today.
+    We are ready to help turn your ideas into reality.
   </p>
-  <a href="mailto:YOUR-EMAIL@example.com" class="btn">
-    CONTACT OUR TEAM
-  </a>
+
+  <div class="contact-buttons">
+
+    <a
+      href="https://wa.me/233245045773"
+      class="btn whatsapp-btn"
+      target="_blank"
+      rel="noopener">
+      CHAT WITH US ON WHATSAPP
+    </a>
+
+    <a
+      href="tel:+233245045773"
+      class="btn telephone-btn">
+      CALL: 024 504 5773
+    </a>
+
+    <a
+      href="tel:+233507353867"
+      class="btn telephone-btn">
+      CALL: 050 735 3867
+    </a>
+
+  </div>
+
+  <p style="margin-top:25px;">
+    WhatsApp: +233 245 045 773<br>
+    Telephone: +233 245 045 773 / +233 507 353 867
+  </p>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-  <p>© 2026 <span>Johnny-J Constructions</span>. All Rights Reserved.</p>
+
+  <p>
+    © 2026
+    <span>Johnny-J Constructions</span>.
+    All Rights Reserved.
+  </p>
+
   <p>You Dream, We Build.</p>
+
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a
+  href="https://wa.me/233245045773"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with Johnny-J Constructions on WhatsApp">
+
+  WhatsApp Us
+
+</a>
 
 </body>
 </html>
